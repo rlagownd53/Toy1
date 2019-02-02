@@ -26,6 +26,7 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.kimhj.toy" />
-	
+	<context:component-scan base-package="com.kimhj.toy.controller" />
+	<context:component-scan base-package="com.test" />
 	
 </beans:beans>

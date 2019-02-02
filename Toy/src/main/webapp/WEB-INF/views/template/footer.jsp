@@ -2,9 +2,10 @@
     pageEncoding="UTF-8"%>
 
 
-
-	<footer>
-		footer		
-	</footer>
+			</div>
+		<div class="footer">
+			footer		
+		</div>
+	</div>
 </body>
 </html>
