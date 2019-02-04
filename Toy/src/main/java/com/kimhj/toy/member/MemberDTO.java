@@ -5,7 +5,7 @@ public class MemberDTO {
 	private String id;
 	private String name;
 	private String nickname;
-	private String phone;
+	private String pw;
 	private String email;
 	public int getNo() {
 		return no;
@@ -31,11 +31,11 @@ public class MemberDTO {
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
-	public String getPhone() {
-		return phone;
+	public String getPw() {
+		return pw;
 	}
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setPw(String pw) {
+		this.pw = pw;
 	}
 	public String getEmail() {
 		return email;
