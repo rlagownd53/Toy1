@@ -3,6 +3,9 @@ package com.kimhj.toy.security;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class SecuritySHA256 {
 	public String hashPassword(String str){
 		String SHA = ""; 

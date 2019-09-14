@@ -1,27 +1,22 @@
-package com.kimhj.toy.member;
+package com.kimhj.toy.member.dao;
 
-import javax.inject.Inject;
+import javax.annotation.Resource;
 
 import org.apache.ibatis.session.SqlSession;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-public class MemberDAOImpl implements MemberDAO {
+import com.kimhj.toy.member.vo.MemberVO;
 
-	private Logger log = LoggerFactory.getLogger(getClass());
+@Repository
+public class MemberDAO {
+
+	private static final String NAME_SPACE = "com.kimhj.toy.member";
 	
-	private static final String namespace = "com.kimhj.toy.memberMapper";
+	@Resource
+	private SqlSession sqlSession;
 	
-	@Inject
-	SqlSession sqlSession;
-	
-	@Override
-	public int userSign(MemberDTO mdto) throws Exception {
-		int result = 0;
-		int maxNo = sqlSession.selectOne(namespace+".selectMaxNo");
-		result = sqlSession.selectOne(namespace+".memberInsert");
-		return result;
+	public int userSign(MemberVO memberVO) throws Exception {
+		return sqlSession.insert(NAME_SPACE+".memberInsert", memberVO);
 	}
 
 }

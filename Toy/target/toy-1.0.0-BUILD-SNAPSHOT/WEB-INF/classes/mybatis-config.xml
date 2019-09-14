@@ -5,7 +5,6 @@
 
 <configuration>
 	<typeAliases>		
-		<typeAlias alias="Test" type="com.test.TestBean" />
-		<typeAlias alias="Member" type="com.kimhj.toy.member.MemberDTO" />
+		<typeAlias alias="memberVO" type="com.kimhj.toy.member.vo.MemberVO" />
 	</typeAliases>
 </configuration>

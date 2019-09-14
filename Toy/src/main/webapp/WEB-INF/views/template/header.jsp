@@ -16,10 +16,10 @@
 			
 			<div class="side_bar_list">
 				<span class="glyphicon glyphicon-log-in">
-					<a class="btn" href="<c:url value="/accounts/login"/>">로그인</a>
+					<a class="btn" href="<c:url value="/accounts/login.do"/>">로그인</a>
 				</span>
 				<span class="glyphicon glyphicon-user">
-					<a class="btn" href="<c:url value="/accounts/sign"/>">회원가입</a>
+					<a class="btn" href="<c:url value="/accounts/sign.do"/>">회원가입</a>
 				</span>
 			</div>
 		</div>
